@@ -1,0 +1,15 @@
+.spray {
+  position: absolute;
+  width: clamp(120px, 21vw, 235px);
+  height: auto;
+  color: var(--color-gold);
+  opacity: 0.34;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (min-width: 900px) {
+  .spray {
+    opacity: 0.45;
+  }
+}

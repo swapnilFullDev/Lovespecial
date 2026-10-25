@@ -1,0 +1,49 @@
+/* ─────────────────────────────────────────────────────────────
+   Design tokens — change these to reshape the whole gift.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  /* Colour */
+  --color-ivory: #fff8f2;
+  --color-ivory-deep: #fbefe6;
+  --color-paper: #fffdf9;
+  --color-blush: #e8b7b7;
+  --color-blush-soft: #f5dfdc;
+  --color-wine: #a64d63;
+  --color-wine-deep: #8b3b50;
+  --color-brown: #583c43;
+  --color-brown-soft: #6f545a;
+  --color-gold: #d8b98c;
+  --color-gold-deep: #a98550;
+  /* Darker gold for small text so it stays comfortably readable. */
+  --color-gold-ink: #8a6636;
+  --color-line: rgba(216, 185, 140, 0.42);
+  --color-line-strong: rgba(216, 185, 140, 0.7);
+
+  /* Type */
+  --font-serif: 'Cormorant Garamond', 'Iowan Old Style', 'Palatino Linotype',
+    Georgia, serif;
+  --font-sans: 'Jost', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-hand: 'Parisienne', 'Segoe Script', cursive;
+
+  /* Layout */
+  --container: 1120px;
+  --container-narrow: 940px;
+  --letter-width: 700px;
+  --page-gutter: clamp(1.15rem, 5vw, 2.5rem);
+
+  /* Shape & depth */
+  --radius-sm: 10px;
+  --radius-card: 18px;
+  --shadow-soft: 0 18px 44px -28px rgba(88, 60, 67, 0.38);
+  --shadow-lift: 0 28px 54px -30px rgba(88, 60, 67, 0.46);
+  --shadow-letter: 0 36px 70px -40px rgba(88, 60, 67, 0.55);
+
+  /* Texture */
+  --paper-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.24'/%3E%3C/svg%3E");
+
+  /* Motion */
+  --ease-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-silk: cubic-bezier(0.34, 1.02, 0.4, 1);
+  --speed-slow: 0.9s;
+}

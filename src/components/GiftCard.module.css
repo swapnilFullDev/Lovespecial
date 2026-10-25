@@ -1,0 +1,148 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  padding: clamp(1.45rem, 4.5vw, 2.35rem);
+  overflow: hidden;
+  text-align: left;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(
+      158deg,
+      rgba(255, 253, 249, 0.98) 0%,
+      rgba(255, 249, 242, 0.94) 100%
+    );
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.4s var(--ease-soft),
+    box-shadow 0.4s var(--ease-soft),
+    border-color 0.4s var(--ease-soft);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    120% 85% at 100% 0%,
+    rgba(232, 183, 183, 0.22),
+    transparent 58%
+  );
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: clamp(1.45rem, 4.5vw, 2.35rem);
+  width: 46px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--color-gold),
+    rgba(216, 185, 140, 0)
+  );
+  opacity: 0.75;
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-line-strong);
+  box-shadow: var(--shadow-lift);
+}
+
+.card:focus-within {
+  border-color: var(--color-line-strong);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(232, 183, 183, 0.6);
+  border-radius: 50%;
+  background: rgba(232, 183, 183, 0.2);
+  color: var(--color-wine);
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
+}
+
+.chapter {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: var(--color-gold-ink);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.title {
+  font-size: clamp(1.6rem, 4.6vw, 1.95rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.subtitle {
+  max-width: 34ch;
+  font-size: 0.93rem;
+  line-height: 1.72;
+  color: var(--color-brown-soft);
+}
+
+.rule {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(216, 185, 140, 0.55),
+    rgba(216, 185, 140, 0)
+  );
+}
+
+.cta {
+  align-self: flex-start;
+  padding-inline: 1.35rem;
+  font-size: 0.88rem;
+}
+
+.cta svg {
+  transition: transform 0.3s var(--ease-soft);
+}
+
+.cta:hover svg {
+  transform: translateX(3px);
+}
+
+@media (max-width: 380px) {
+  .cta {
+    width: 100%;
+  }
+}

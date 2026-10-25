@@ -1,0 +1,150 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 248, 242, 0.96);
+  border-bottom: 1px solid rgba(216, 185, 140, 0.3);
+  backdrop-filter: blur(14px) saturate(125%);
+  -webkit-backdrop-filter: blur(14px) saturate(125%);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: 0.8rem var(--page-gutter);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  text-decoration: none;
+  color: var(--color-brown);
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  letter-spacing: 0.015em;
+  white-space: nowrap;
+}
+
+.brandMark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(216, 185, 140, 0.55);
+  border-radius: 50%;
+  background: rgba(232, 183, 183, 0.18);
+  color: var(--color-wine);
+  transition:
+    transform 0.35s var(--ease-soft),
+    border-color 0.35s var(--ease-soft);
+}
+
+.brandMark svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 1.7;
+}
+
+.brand:hover .brandMark {
+  transform: rotate(-7deg) scale(1.06);
+  border-color: var(--color-gold-deep);
+}
+
+.brandText {
+  line-height: 1.2;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.6vw, 1.9rem);
+}
+
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.3rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-brown-soft);
+  transition: color 0.25s var(--ease-soft);
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--color-wine);
+  transform: translateX(-50%);
+  transition: width 0.3s var(--ease-soft);
+}
+
+.link:hover {
+  color: var(--color-wine);
+}
+
+.link:hover::after,
+.active::after {
+  width: 100%;
+}
+
+.active {
+  color: var(--color-wine);
+}
+
+.link:focus-visible {
+  outline-offset: 2px;
+}
+
+@media (max-width: 620px) {
+  .inner {
+    flex-direction: column;
+    gap: 0.05rem;
+    padding-block: 0.5rem;
+  }
+
+  .brand {
+    min-height: 38px;
+    font-size: 0.92rem;
+  }
+
+  .brandMark {
+    width: 25px;
+    height: 25px;
+  }
+
+  .brandMark svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .nav {
+    gap: 1.3rem;
+  }
+
+  .link {
+    min-height: 44px;
+    font-size: 0.68rem;
+    letter-spacing: 0.13em;
+  }
+
+  .link::after {
+    bottom: 2px;
+  }
+}

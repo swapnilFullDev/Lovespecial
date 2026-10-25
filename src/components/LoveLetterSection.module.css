@@ -1,0 +1,71 @@
+.topBar {
+  margin-bottom: clamp(0.6rem, 2vw, 1.15rem);
+}
+
+.letterTitle {
+  max-width: 36ch;
+  margin: 0 auto clamp(1.75rem, 5vw, 2.6rem);
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 4.2vw, 1.68rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.42;
+  text-align: center;
+  color: var(--color-wine);
+}
+
+.stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.3rem, 4vw, 1.8rem);
+  margin-bottom: clamp(2rem, 6vw, 3.2rem);
+  padding-block: clamp(0.5rem, 2vw, 1rem);
+}
+
+.stage::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(76vw, 540px);
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,
+    rgba(232, 183, 183, 0.18),
+    rgba(232, 183, 183, 0) 68%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.openButton {
+  position: relative;
+  z-index: 1;
+  min-width: min(260px, 100%);
+}
+
+.hint {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-brown-soft);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(2rem, 5.5vw, 2.9rem);
+}
+
+@media (max-width: 380px) {
+  .openButton {
+    width: 100%;
+  }
+}

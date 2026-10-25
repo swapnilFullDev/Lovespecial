@@ -26,6 +26,12 @@
   cursor: default;
 }
 
+/* Used by the opening screen: decorative, not a control. */
+.envelope.static {
+  cursor: default;
+  pointer-events: none;
+}
+
 .back {
   position: absolute;
   inset: 0;

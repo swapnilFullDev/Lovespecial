@@ -3,7 +3,7 @@ import { loveContent } from '../data/loveContent'
 import Ornament from './Ornament'
 import styles from './LoveLetter.module.css'
 
-const { letter } = loveContent
+const { loveLetter } = loveContent
 
 export default function LoveLetter({ letterRef }) {
   return (
@@ -16,17 +16,17 @@ export default function LoveLetter({ letterRef }) {
       <Ornament className={styles.ornament} />
 
       <p id="letter-greeting" className={styles.greeting}>
-        {letter.greeting}
+        {loveLetter.greeting}
       </p>
 
       <div className={styles.body}>
-        {letter.paragraphs.map((paragraph, index) => (
+        {loveLetter.paragraphs.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
       </div>
 
-      <p className={styles.closing}>{letter.closing}</p>
-      <p className={styles.signature}>{letter.signature}</p>
+      <p className={styles.closing}>{loveLetter.closing}</p>
+      <p className={styles.signature}>{loveLetter.signature}</p>
 
       <div className={styles.endMark} aria-hidden="true">
         <span />

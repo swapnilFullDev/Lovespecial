@@ -3,8 +3,8 @@
 }
 
 .letterTitle {
-  max-width: 36ch;
-  margin: 0 auto clamp(1.75rem, 5vw, 2.6rem);
+  max-width: 32ch;
+  margin: 0 auto 0.55rem;
   font-family: var(--font-serif);
   font-size: clamp(1.25rem, 4.2vw, 1.68rem);
   font-style: italic;
@@ -12,6 +12,18 @@
   line-height: 1.42;
   text-align: center;
   color: var(--color-wine);
+}
+
+/* The one English line, kept small beneath the Hinglish title. */
+.letterSubtitle {
+  max-width: 40ch;
+  margin: 0 auto clamp(1.75rem, 5vw, 2.6rem);
+  font-family: var(--font-serif);
+  font-size: clamp(0.86rem, 2.6vw, 0.98rem);
+  font-style: italic;
+  line-height: 1.55;
+  text-align: center;
+  color: var(--color-brown-soft);
 }
 
 .stage {
@@ -54,6 +66,17 @@
   font-size: 1.02rem;
   font-style: italic;
   line-height: 1.5;
+  text-align: center;
+  color: var(--color-brown-soft);
+}
+
+.letterNote {
+  max-width: 44ch;
+  margin: clamp(2.1rem, 6vw, 3.1rem) auto 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.02rem, 3vw, 1.14rem);
+  font-style: italic;
+  line-height: 1.68;
   text-align: center;
   color: var(--color-brown-soft);
 }

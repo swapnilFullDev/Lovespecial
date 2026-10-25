@@ -6,10 +6,10 @@ import GiftCard from './GiftCard'
 import Ornament from './Ornament'
 import styles from './WelcomeSection.module.css'
 
-const { welcome } = loveContent
+const { home } = loveContent
 
 function Heading() {
-  const { heading, headingAccent } = welcome
+  const { heading, headingAccent } = home
   const accentIndex = headingAccent ? heading.indexOf(headingAccent) : -1
 
   if (accentIndex === -1) return heading
@@ -35,21 +35,23 @@ export default function WelcomeSection() {
           <Heart />
         </div>
 
-        <p className={`eyebrow ${styles.eyebrow}`}>{welcome.eyebrow}</p>
+        <p className={`eyebrow ${styles.eyebrow}`}>{home.eyebrow}</p>
 
         <h1 id="welcome-heading" className={styles.title}>
           <Heading />
         </h1>
 
-        <p className={styles.description}>{welcome.description}</p>
+        <p className={styles.description}>{home.description}</p>
 
         <Ornament className={styles.ornament} />
 
         <div className={styles.cards}>
-          {welcome.cards.map((card) => (
+          {home.cards.map((card) => (
             <GiftCard key={card.id} card={card} />
           ))}
         </div>
+
+        <p className={styles.note}>{home.note}</p>
       </div>
     </section>
   )

@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { loveContent } from './data/loveContent'
+import GiftGate from './components/GiftGate'
 import LoveLetterSection from './components/LoveLetterSection'
 import PromiseSection from './components/PromiseSection'
 import SiteFooter from './components/SiteFooter'
@@ -36,6 +37,14 @@ function PageTitle() {
 }
 
 export default function App() {
+  return (
+    <GiftGate>
+      <SiteShell />
+    </GiftGate>
+  )
+}
+
+function SiteShell() {
   // The site uses hash routing, so a normal "#main-content" link would be
   // read as a route. Move focus directly instead.
   const skipToContent = (event) => {

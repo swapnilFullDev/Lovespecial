@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom'
 import { loveContent } from '../data/loveContent'
 import BackToHome from './BackToHome'
 import Envelope from './Envelope'
+import KarvaChauth from './KarvaChauth'
 import LoveLetter from './LoveLetter'
 import PageIntro from './PageIntro'
+import PortraitPair from './PortraitPair'
 import styles from './LoveLetterSection.module.css'
 
-const { letter, ui } = loveContent
+const { loveLetter, ui, romanticMessages } = loveContent
 
 export default function LoveLetterSection() {
   const [isOpen, setIsOpen] = useState(false)
@@ -53,18 +55,21 @@ export default function LoveLetterSection() {
       </div>
 
       <PageIntro
-        label={letter.questionLabel}
-        heading={letter.heading}
+        label={loveLetter.eyebrow}
+        // heading={loveLetter.heading}
         headingId="letter-heading"
       />
 
-      <h2 className={styles.letterTitle}>{letter.title}</h2>
+      <h2 className={styles.letterTitle}>{loveLetter.title}</h2>
+      <p className={styles.letterSubtitle}>{loveLetter.subtitle}</p>
+
+      <PortraitPair />
 
       <div className={styles.stage}>
         <Envelope
           isOpen={isOpen}
           onOpen={openLetter}
-          note={letter.envelopeNote}
+          note={loveLetter.envelopeNote}
         />
 
         {!isOpen && (
@@ -75,25 +80,31 @@ export default function LoveLetterSection() {
             aria-expanded={isOpen}
             aria-controls="love-letter"
           >
-            {letter.openButton}
+            {loveLetter.openButton}
           </button>
         )}
 
         <p className={styles.hint} role="status">
-          {isOpen ? letter.openedNote : letter.sealHint}
+          {isOpen ? loveLetter.openedNote : loveLetter.sealHint}
         </p>
       </div>
 
       {isOpen && (
-        <div id="love-letter">
-          <LoveLetter letterRef={letterRef} />
-        </div>
+        <>
+          <div id="love-letter">
+            <LoveLetter letterRef={letterRef} />
+          </div>
+
+          <p className={styles.letterNote}>{romanticMessages.letter}</p>
+
+          <KarvaChauth />
+        </>
       )}
 
       <div className={styles.actions}>
         <Link to="/" className="btn btn-ghost">
           <ArrowLeft aria-hidden="true" />
-          {letter.backLabel}
+          {loveLetter.backLabel}
         </Link>
       </div>
     </div>

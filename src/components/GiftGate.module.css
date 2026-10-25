@@ -1,0 +1,16 @@
+.site {
+  min-height: 100vh;
+  min-height: 100svh;
+  animation: siteIn 0.75s var(--ease-soft);
+}
+
+@keyframes siteIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

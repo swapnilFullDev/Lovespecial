@@ -1,0 +1,35 @@
+.section {
+  margin: 0 auto clamp(2rem, 6vw, 3rem);
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  gap: clamp(1.5rem, 5vw, 2.2rem);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.photo {
+  max-width: 300px;
+}
+
+/* Side by side only once both portraits stay comfortably readable. */
+@media (min-width: 700px) {
+  .pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    justify-items: stretch;
+    gap: clamp(1.4rem, 3vw, 2rem);
+  }
+
+  .photo {
+    max-width: none;
+  }
+
+  /* A soft half-beat between the two frames, never a distracting slide. */
+  .pair > :nth-child(2) {
+    animation-delay: 0.12s;
+  }
+}

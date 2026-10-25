@@ -131,6 +131,16 @@
   }
 }
 
+.note {
+  max-width: 40ch;
+  margin: clamp(1.8rem, 5vw, 2.6rem) auto 0;
+  font-family: var(--font-hand);
+  font-size: clamp(1.3rem, 4.8vw, 1.7rem);
+  line-height: 1.55;
+  color: var(--color-wine);
+  animation: fadeUp 0.9s var(--ease-soft) 0.5s both;
+}
+
 @media (max-width: 639px) {
   /* Keep the small-screen hero quiet and easy to read. */
   .floralLeft,

@@ -60,7 +60,7 @@ export default function CountdownScreen({ timeLeft }) {
       <FloatingPetals />
 
       <div className={styles.inner}>
-        <p className={styles.kicker}>{countdown.kicker}</p>
+        {/* <p className={styles.kicker}>{countdown.kicker}</p> */}
 
         <h1 id="countdown-heading" className={styles.heading}>
           {countdown.heading}

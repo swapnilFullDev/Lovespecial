@@ -92,11 +92,11 @@ export const loveContent = {
   opening: {
     intro: "Ek chhoti si duniya, sirf tumhare liye...",
     heading: `${names.her} ❤️`,
-    message: `${names.him} ki taraf se, us insaan ke liye jo uske dil mein ek khaas jagah rakhti hai.`,
+    message: `Hone wale pati ki taraf se, us insaan ke liye jo uske dil mein ek khaas jagah rakhti hai.`,
     line: "Kuch vaade, kuch dil ki baatein, aur ek aisa ehsaas jo sirf tumhare liye hai.",
-    button: "Hamari Kahaani ❤️",
-    signature: `${names.him} ki taraf se, sirf tumhare liye.`,
-    envelopeNote: `${names.her} ke liye`,
+    button: "Pehla karva chauth ❤️",
+    signature: `Pati ki taraf se, Patni ke liye.`,
+    envelopeNote: `Pyari patni ke liye`,
   },
 
   /* ── C. Home ────────────────────────────────────────────── */
@@ -106,7 +106,7 @@ export const loveContent = {
     // `headingAccent` is the part of it rendered in italic rose.
     heading: `${names.her}, Tumhare Liye ❤️`,
     headingAccent: "Tumhare Liye",
-    description: `Yeh chhoti si duniya ${names.him} ne tumhare liye banayi hai. Jab bhi tumhara mann kare, yahan aana aur un baaton ko padhna jo shayad woh har baar saamne baith kar keh na paaye.`,
+    description: `Yeh chhoti si duniya Mne tumhare liye banayi hai. Jab bhi tumhara mann kare, yahan aana aur un baaton ko padhna jo shayad woh har baar saamne baith kar keh na pau.`,
     cards: [
       {
         id: "promise",
@@ -173,13 +173,13 @@ export const loveContent = {
 
       "Aur mera sabse bada promise yeh hai ki GF-BF ke relationship mein jitna pyaar, romance aur excitement hoti hai, main chahta hoon ki shaadi ke baad aapko usse bhi kahin zyada mile. Main nahi chahta ki waqt ke saath humare rishte ka romance kam ho ya aapko kabhi pyaar ki kami mehsoos ho. Main har din kuch aisa karna chahta hoon jisse aapko phir se mujhse pyaar ho jaaye. ❤️",
 
-      "Aur ab jab bhi main kisi temple mein jaaunga, toh mann mein yahi khwaahish rahegi ki agli baar wahan aapko apne saath lekar aaun. Jin jagahon par main ab tak akele gaya hoon, ab un jagahon par aapke saath jaana chahta hoon. Bhagwan se apne liye kuch maangunga, toh usmein aapki khushi, humara saath aur humari zindagi bhar ki mohabbat zaroor shaamil hogi. 🙏❤️",
+      "Aur ab jab bhi main kisi temple mein jaaunga, toh mann mein yahi khwaahish rahegi ki agli baar wahan aapko apne saath lekar aaun. Jin jagahon par main ab tak akele gaya hoon, ab un jagahon par aapke saath jaana chahta hoon. Bhagwan se apne liye kuch maangunga, toh usmein aapki khushi, humara saath aur humari zindagi bhar ki mohabbat zaroor shaamil hogi. ❤️",
 
       "Lekin main chahta hoon ki har mushkil ke baad hum ek-doosre ke aur kareeb aayein. Hum sirf khushi ke dino mein nahi, balki un dino mein bhi ek-doosre ka haath thaamein jab sab kuch aasaan na ho. Chahe kitni bhi ladai ho, hum ek-doosre ki respect kabhi nahi khoyenge. Har problem ko milkar suljhayenge, ek-doosre ke sapno ko support karenge aur kabhi apne rishte ko taken for granted nahi lenge.",
 
-      "Mere liye pyaar sirf 'I Love You' kehna nahi hai. Pyaar hai aapki baat sunna, aapki izzat karna, aapke sapno ko apna samajhna, aapki chhoti-chhoti khushiyon ka khayal rakhna aur har din aapko dobara choose karna.",
+      "Mere liye pyaar sirf 'I Love You' kehna nahi hoga. Pyaar aata hai aapki baate sunna, aapki izzat karna, aapke sapno ko apna samajhna, aapki chhoti-chhoti khushiyon ka khayal rakhna aur har din aapko dobara choose karna.",
 
-      "Aur jab bhi aap in vaadon ko padhein, bas itna yaad rakhna... aap mere liye sirf meri mohabbat nahi, balki meri zindagi ka woh hissa hain jise main hamesha sambhaal kar rakhna chahta hoon. Main yeh vaade isliye nahi kar raha ki main perfect hoon, balki isliye kar raha hoon kyunki main aapke saath milkar ek khoobsurat zindagi banana chahta hoon. Jahan aapko ek husband hi nahi, balki ek best friend, ek partner, ek supporter aur ek aisa insaan mile jo har haal mein aapko choose kare. Aaj bhi, kal bhi aur zindagi ke aakhri din tak. ❤️",
+      "Aur jab bhi aap in vaadon ko padhein, bas itna yaad rakhna... aap mere liye sirf meri mohabbat nahi, balki meri zindagi ka woh hissa ho jise main hamesha sambhaal kar rakhna chahta hoon. Main yeh vaade isliye nahi kar raha ki main perfect hoon, balki isliye kar raha hoon kyunki main aapke saath milkar ek khoobsurat zindagi banana chahta hoon. Jahan aapko ek husband hi nahi, balki ek best friend, ek partner, ek supporter aur ek aisa insaan mile jo har haal mein aapko choose kare. Aaj bhi, kal bhi aur zindagi ke aakhri din tak. ❤️",
     ],
 
     backLabel: "Back",
@@ -201,18 +201,30 @@ export const loveContent = {
     /* ── KHAT KO YAHAN BADLO ────────────────────────────────
        Greeting, paragraphs, closing aur signature badal do.
        Har paragraph ek alag string hai. */
-    greeting: `Meri Pyaari ${names.her}, ❤️`,
+    greeting: `To My Future Wife, ❤️`,
+
     paragraphs: [
-      "Pata nahi jab tum yeh khat padhogi toh tumhare chehre par muskaan hogi, aankhon mein nami hogi, ya tum mujhe yaad karke chupke se muskura rahi hogi. Lekin ek baat main chahta hoon ki tum hamesha yaad rakho — tum mere liye bahut khaas ho.",
-      "Main nahi jaanta ki zindagi humein kaun-kaun se mod dikhayegi. Kabhi khushiyan hongi, kabhi mushkilein hongi, kabhi hum hasenge aur kabhi ek-doosre se naraaz bhi honge. Lekin main chahta hoon ki hum har haal mein ek-doosre ko samajhne ki koshish karein.",
-      "Main tumhara sirf aaj nahi, tumhare aane wale kal ka bhi hissa banna chahta hoon. Tumhare sapno mein tumhara saathi, tumhari pareshaniyon mein tumhara humdard, tumhari khushiyon mein tumhari muskaan ki wajah, aur tumhare mushkil waqt mein tumhara sabse apna insaan banna chahta hoon.",
-      "Mujhe tumhare saath sirf bade-bade pal nahi jeene. Main tumhare saath chhoti-chhoti khushiyan bhi jeena chahta hoon. Subah ki chai, bina kisi wajah ki hasi, chhoti si nok-jhok, ek-doosre ka intezaar, aur din khatam hone par ek-doosre se baat karna — mere liye inhi baaton mein toh zindagi ki khoobsurati hai.",
-      "Main chahta hoon ki tum mere saath apni har baat keh sako. Apni khushiyan, apne darr, apni uljhan aur apne sapne. Tumhe mere saamne hamesha strong banne ki zaroorat na pade. Tumhari khamoshi ko samajhne ki koshish karun aur jab tumhe sirf ek saath chahiye ho, toh main tumhare paas rahun.",
-      "Aur jab kabhi zindagi hum dono ko thaka de, toh hum ek-doosre ke liye sukoon ban sakein.",
-      "Mujhe tumhare saath ek aisa rishta banana hai jahan pyaar ke saath izzat ho, apnapan ho, bharosa ho, aur har din ek-doosre ko choose karne ki wajah ho.",
-      "Agar kabhi tumhe lage ki main tumse apni feelings theek se keh nahi paa raha, toh yeh khat dobara padh lena. Shayad mere lafz tumhe yaad dila dein ki mere dil mein tumhare liye kitni jagah hai.",
-      `${names.her}, main tumse sirf aaj ke liye nahi, un saare kal ke liye pyaar karna chahta hoon jo hum saath mein banayenge.`,
+      "Main nahi jaanta ki zindagi humein kaun-kaun se mod dikhayegi. Kabhi khushiyan hongi, kabhi mushkilein hongi, kabhi hum saath mein hasenge aur kabhi ek-doosre se naraaz bhi honge. Lekin main chahta hoon ki hum har haal mein ek-doosre ko samajhne ki koshish karein. Chahe kitni bhi mushkil kyun na ho, hum ek-doosre ka haath thaamna kabhi na bhoolein.",
+
+      "Main tumhara sirf aaj nahi, tumhare aane wale kal ka bhi hissa banna chahta hoon. Tumhare sapno mein tumhara saathi, tumhari pareshaniyon mein tumhara humdard, tumhari khushiyon mein tumhari muskaan ki wajah aur tumhare mushkil waqt mein tumhara sabse achha dost banna chahta hoon. Main chahta hoon ki tumhe kabhi yeh mehsoos na ho ki tumhe apni har ladai akele ladni hai.",
+
+      "Mujhe tumhare saath sirf bade-bade pal nahi jeene. Main tumhare saath woh chhoti-chhoti khushiyan bhi jeena chahta hoon, jinse milkar ek khoobsurat zindagi banti hai. Subah ki chai, tumhara energetic shake, ek-doosre ko dekhkar muskurana, thodi-thodi si masti, ek-doosre ka intezaar aur din khatam hone par saath baithkar baatein karna. Mere liye toh inhi chhoti-chhoti baaton mein zindagi ki asli khoobsurati hai.",
+
+      "Aur haan, mujhe pata hai ki tumhe bahar ka khana aur khaaskar momos kitne pasand hain. ❤️ Main chahta hoon ki hum saath mein jaayein, tumhare favourite momos khaayein aur aise hi chhoti-chhoti yaadein banaayein. Haan, kabhi-kabhi main tumhe bahar ka khana khaane se mana karunga, toh please yeh mat sochna ki main tumhari khushiyon ke beech aa raha hoon. Bas tumhari health ki fikr hoti hai mujhe. Main chahta hoon ki tum apni favourite cheezon ka maza bhi lo aur healthy bhi raho. Aur waise bhi, tumhare saath momos khaane jaana meri bhi favourite memories mein se ek hoga.",
+
+      "Main chahta hoon ki tum mere saamne apni har baat keh sako. Apni khushiyan, apne darr, apni uljhan aur apne sapne. Tumhe mere saamne hamesha strong banne ya sab kuch theek hone ka dikhawa karne ki zaroorat na pade. Jab tum thak jaao, toh mere paas aakar sukoon se baith sako. Jab tum udaas ho, toh bina kuch kahe mera haath thaam sako. Main har baar tumhari problem solve kar paaun, yeh zaroori nahi, lekin main chahta hoon ki tumhe har baar yeh yakeen ho ki main tumhare saath hoon.",
+
+      "Ek baat hai jo main tumse dil se kehna chahta hoon. Main jaanta hoon ki shaadi ke baad tumhe apna ghar, apne parents aur apni purani zindagi ka ek hissa chhodkar mere ghar aana hoga. Shayad kuch pal tumhe apne ghar ki yaad aaye, apni mummy ki, apne papa ki aur un chhoti-chhoti baaton ki jo tumhari zindagi ka hissa rahi hain. Main tumse yeh nahi kahunga ki tumhe kabhi unki yaad nahi aani chahiye. Balki main chahta hoon ki tum unhe yaad karo, unse baat karo, unse milne jaao aur unke saath pehle ki tarah apna rishta nibhaao.",
+
+      "Aur jab ap apke ghr se vida ho rhi ho, toh ap mummy-papa se yeh zrur se kehna — 'Mummy-Papa, meri vidai zaroor ho rahi hai, lekin aapko chhodkar nahi. Balki ab aapka ek aur beta hai. Aapki khushi, aapki zaroorat aur aapki pareshani mein ab hum dono aapke saath khade rahenge.' ❤️ Main chahta hoon ki tumhare parents ko bhi mujh par utna hi bharosa ho jitna tum karti ho. Jahan unhe humari zaroorat hogi, wahan hum dono milkar unka saath denge. Kyunki tumhare parents sirf tumhare nahi, mere bhi apne honge.",
+
+      "Main yeh nahi kehta ki main ek perfect ladka hoon. Mujhmein bhi kamiyan hain, mujhse bhi galtiyan hongi aur ho sakta hai ki kabhi main tumhari baat samajhne mein waqt laga doon. Lekin main har din khud ko behtar banaane ki koshish karunga. Main chahta hoon ki tumhe apne husband mein sirf ek life partner nahi, balki ek aisa dost bhi mile jiske saamne tum bina kisi jhijhak ke apna dil khol sako.",
+
+      "Aur jab kabhi zindagi hum dono ko thaka de, toh hum ek-doosre ke liye sukoon ban sakein. Humare beech pyaar ke saath izzat ho, apnapan ho, bharosa ho aur ek-doosre ko har din dobara choose karne ki wajah ho. Main chahta hoon ki waqt ke saath humara rishta sirf gehra hi nahi, balki aur bhi khoobsurat hota jaaye.",
+
+      "Agar kabhi tumhe lage ki main apni feelings theek se keh nahi paa raha, toh yeh khat dobara padh lena. Shayad mere lafz tumhe yaad dila dein ki mere dil mein tumhare liye kitni jagah hai. Main chahta hoon ki tum humare aane wale kal ke baare mein sochkar muskuraao, kyunki us kal mein main tumhare saath chalne ke liye dil se taiyaar hoon.",
     ],
+
     closing: "Hamesha tumhara,",
     signature: `${names.him} ❤️`,
   },
@@ -222,13 +234,11 @@ export const loveContent = {
     eyebrow: `${names.her} aur ${names.him} ka ek sapna`,
     heading: "Ek Din, Karva Chauth Ki Shaam... 🌙",
     paragraphs: [
-      "Main sochta hoon us din ke baare mein jab Karva Chauth ki shaam hogi, aasman mein chaand niklega, aur tum saj-dhaj kar mere saamne aaogi.",
-      "Tumhare chehre ki muskaan, tumhari aankhon ki chamak, aur woh pal jab hum chaand ko dekhenge aur phir ek-doosre ko... main chahta hoon ki woh pal hum dono ki zindagi ki sabse pyaari yaadon mein se ek bane.",
-      "Shayad main us din tumhe dekh kar kuch pal ke liye sab kuch bhool jaun. Dil mein bas ek hi baat hogi — kitna khoobsurat hai woh rishta jahan do log ek-doosre ko sirf chahte nahi, balki ek-doosre ki khushi, sehat aur sukoon ki bhi parwah karte hain.",
-      "Mere liye Karva Chauth sirf ek rasam nahi, balki tumhare saath apni zindagi ke khoobsurat pal baantne ka ek aur bahaana hoga.",
-      "Aur main chahta hoon ki hamare rishte mein pyaar sirf kisi ek din ya kisi ek rasam tak simit na rahe. Tumhara khayal rakhna, tumhari izzat karna, tumhe hansana aur tumhare saath khada rehna — yeh sab main har din karna chahta hoon.",
-      "Chaand har saal aayega, lekin main chahta hoon ki us chaand ke neeche tumhara haath thaamne ki khushi har baar mere liye utni hi khaas rahe.",
-      "Aur us pal main bas tumhe dekh kar muskuraun aur dil mein kahun — meri zindagi ka sabse khoobsurat tohfa tum ho. ❤️🌙",
+      "Main sochta hoon us Karva Chauth ki shaam ke baare mein, jab tum saj-dhaj kar mere saamne aaogi, chaand niklega aur main chaand se pehle tumhe dekhkar muskuraunga. ❤️",
+
+      "Jab hum chaand ko dekhkar phir ek-doosre ko dekhenge, toh main bas yahi sochunga — meri zindagi ka sabse khoobsurat tohfa mere saamne khada hai.",
+
+      "Aur main chahta hoon ki tumhe sirf us din nahi, balki har din mere pyaar, care aur saath ka ehsaas ho. Kyunki mere liye tumhari khushi aur tumhara sukoon hi sabse zyada maayne rakhta hai. ❤️🌙",
     ],
     handwritten: `Us chaand ke neeche, ${names.her} aur ${names.him}.`,
   },
@@ -237,7 +247,7 @@ export const loveContent = {
   // These are deliberately spread across the site, not shown together.
   romanticMessages: {
     promise: `${names.her}, har din tumhe thoda aur samajhna, tumse thoda aur pyaar karna chahta hoon.`,
-    letter: `${names.her}, chahe din kaisa bhi ho, tumse baat karke sab kuch thoda behtar lagta hai.`,
+    letter: `${names.her}, chahe din kaisa bhi ho, tumse baat karke sab behtar ho jata hai.`,
     footer: `${names.her}, aaj bhi tumhe choose karunga, kal bhi, aur har us din jab humein ek-doosre ki zaroorat hogi.`,
     // Extra lines, rakhe hue hain taaki kabhi swap kar sako.
     spare: [

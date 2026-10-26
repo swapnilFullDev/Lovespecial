@@ -84,9 +84,9 @@ export default function LoveLetterSection() {
           </button>
         )}
 
-        <p className={styles.hint} role="status">
+        {/* <p className={styles.hint} role="status">
           {isOpen ? loveLetter.openedNote : loveLetter.sealHint}
-        </p>
+        </p> */}
       </div>
 
       {isOpen && (
